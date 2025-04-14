@@ -3,6 +3,7 @@ import './App.css'
 import Hero from './Components/Hero/Hero'
 import Navbar from './Components/Navbar/Navbar'
 import PricingPlan from './Components/Pricing/PricingPlan'
+import SellChart from './Components/SellingChart/SellChart'
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
                   pricingDataFetch = {pricingDataFetch}
                 ></PricingPlan>
             </Suspense>
+            <div className='my-20'>
+              <SellChart></SellChart>
+            </div>
        </div>
     </>
   )
