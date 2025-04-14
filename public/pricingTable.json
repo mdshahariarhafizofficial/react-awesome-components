@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "planName": "Basic",
+      "pricePerDay": 40,
+      "pricePerMonth": 950,
+      "features": [
+        "Economy Cars Only",
+        "Manual Transmission",
+        "Limited Mileage (100 km/day)",
+        "Basic Insurance Coverage",
+        "24/7 Customer Support",
+        "No Hidden Fees",
+        "Pickup from Main Office Only",
+        "Fuel Not Included"
+      ]
+    },
+    {
+      "id": 2,
+      "planName": "Standard",
+      "pricePerDay": 60,
+      "pricePerMonth": 1400,
+      "features": [
+        "Wide Selection (Sedans & Hatchbacks)",
+        "Automatic Transmission Available",
+        "Unlimited Mileage",
+        "Full Insurance Coverage",
+        "Free Cancellation (24 hrs prior)",
+        "Airport Pickup Available",
+        "AC & Non-AC Options",
+        "GPS Included"
+      ]
+    },
+    {
+      "id": 3,
+      "planName": "Premium",
+      "pricePerDay": 90,
+      "pricePerMonth": 2100,
+      "features": [
+        "Luxury Cars & SUVs",
+        "Fully Automatic Transmission",
+        "Unlimited Mileage",
+        "VIP Insurance with Roadside Assistance",
+        "Free Airport Pickup & Drop-off",
+        "Priority Customer Support",
+        "Free Child Seat & GPS",
+        "Complimentary Fuel (First 100 km)"
+      ]
+    }
+  ]
+  
