@@ -11,7 +11,7 @@ const navMenu = [
   
 
 const Navbar = () => {
-    const menu = navMenu.map(item => <li key={item.id}><a href={item.path}>{item.name}</a></li>);
+    const menu = navMenu.map(item => <li key={item.id} className='text-center lg:text-left px-8 py-3 lg:p-0 hover:bg-black lg:hover:bg-white'><a href={item.path}>{item.name}</a></li>);
 
     const [open, setOpen] = useState(false);
 
@@ -20,14 +20,23 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='flex items-center justify-between py-4 px-10'>
+        <nav className='flex items-center justify-between py-4 px-5 lg:px-10'>
             <div className='logo flex items-center gap-4'>
-                <button onClick={handleMenu} className='lg:hidden cursor-pointer'>
-                    {
-                        
-                        open?<X color="#fe2020" size={50} strokeWidth={2} />:<Logs color='red' size={50} strokeWidth={2} />
-                    }
-                </button>
+                <div>
+                    <button onClick={handleMenu} className='lg:hidden cursor-pointer'>
+                        {
+                            
+                            open?<X color="#fe2020" size={50} strokeWidth={2} />:<Logs color='red' size={50} strokeWidth={2} />
+                        }    
+                    </button>
+                    <ul className={`bg-red-500 lg:hidden text-white flex flex-col gap-3 absolute
+                        ${open ? 'mt-0': '-mt-96'} duration-1000` }>
+                            {
+                                menu
+                            }
+                    </ul>
+                </div>
+
                 <img className='w-[250px]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV9kumOddkb7wTQCXz2B30L0ng0QxWYenoBt9_1wP_z-s4PKpWzLMwyV-z25AvHXm6Q&usqp=CAU" alt="" />
             </div>
             <div className='hidden lg:block'>
@@ -38,7 +47,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className=''>
-                <a className="btn bg-black text-white">Button</a>
+                <a className="btn bg-red-600 text-white">Button</a>
             </div>
         </nav>
     );
