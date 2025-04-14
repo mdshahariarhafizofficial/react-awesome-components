@@ -20,7 +20,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='flex items-center justify-between py-4 px-5 lg:px-10'>
+        <nav className='flex items-center justify-between py-4 lg:px-10'>
             <div className='logo flex items-center gap-4'>
                 <div>
                     <button onClick={handleMenu} className='lg:hidden cursor-pointer'>
