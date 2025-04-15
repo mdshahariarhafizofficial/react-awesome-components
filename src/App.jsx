@@ -7,7 +7,7 @@ import SellChart from './Components/SellingChart/SellChart'
 
 function App() {
 
-  const pricingDataFetch = fetch('/public/pricingTable.json')
+  const pricingDataFetch = fetch('pricingTable.json')
   .then(res => res.json())
 
   return (
